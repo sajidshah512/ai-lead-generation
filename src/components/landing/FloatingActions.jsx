@@ -13,7 +13,7 @@ const FloatingActions = () => {
   return (
     <>
       <a
-        href="https://wa.me/15550102024?text=Hi%20Codecelix%2C%20I'd%20like%20to%20book%20a%20strategy%20call"
+        href="https://wa.me/03185790940?text=Hi%20Codecelix%2C%20I'd%20like%20to%20book%20a%20strategy%20call"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat on WhatsApp"
