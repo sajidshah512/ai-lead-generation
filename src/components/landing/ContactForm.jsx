@@ -114,13 +114,13 @@ const ContactForm = () => {
 
             <div className="space-y-3 text-sm text-surface-dark-foreground/70">
               <div className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-accent" /> hello@codecelix.com
+                <Mail className="w-4 h-4 text-accent" /> infocodecelix@gmail.com
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-accent" /> +1 (555) 010-2024
+                <Phone className="w-4 h-4 text-accent" /> +92 3185790940
               </div>
               <div className="flex items-center gap-3">
-                <MapPin className="w-4 h-4 text-accent" /> Remote — Worldwide
+                <MapPin className="w-4 h-4 text-accent" /> Remote — Rawalpindi
               </div>
             </div>
           </motion.div>
