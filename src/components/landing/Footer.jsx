@@ -32,8 +32,8 @@ const Footer = () => {
           <div>
             <h4 className="font-display font-semibold mb-4 text-sm uppercase tracking-wider">Contact</h4>
             <ul className="space-y-2.5 text-sm text-surface-dark-foreground/65">
-              <li>hello@codecelix.com</li>
-              <li>+1 (555) 010-2024</li>
+              <li>infocodecelix@gmail.com</li>
+              <li>+92 3185790940</li>
               <li>Remote — Rawalpindi</li>
             </ul>
           </div>
