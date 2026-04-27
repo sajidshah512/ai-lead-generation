@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Codecelix — AI Lead Generation Landing.
+   Brand: deep blue → electric purple gradient with neon green CTA accent.
+   All colors HSL. No raw colors in components. */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 224 32% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 224 32% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 32% 12%;
+
+    /* Primary = deep brand blue */
+    --primary: 232 78% 56%;
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 258 89% 66%;
+
+    /* Secondary = electric purple */
+    --secondary: 258 89% 66%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 224 30% 96%;
+    --muted-foreground: 224 14% 42%;
+
+    /* Accent = neon green CTA */
+    --accent: 152 76% 44%;
+    --accent-foreground: 0 0% 100%;
+    --accent-glow: 152 90% 55%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 224 20% 90%;
+    --input: 224 20% 92%;
+    --ring: 232 78% 56%;
+
+    --radius: 1rem;
+
+    /* Brand surfaces */
+    --surface-dark: 232 47% 8%;
+    --surface-dark-foreground: 0 0% 100%;
+    --surface-elevated: 232 40% 12%;
+
+    /* Gradients */
+    --gradient-brand: linear-gradient(135deg, hsl(232 78% 56%) 0%, hsl(258 89% 66%) 60%, hsl(285 85% 62%) 100%);
+    --gradient-hero: radial-gradient(ellipse at top left, hsl(258 89% 66% / 0.35), transparent 60%),
+                     radial-gradient(ellipse at bottom right, hsl(232 78% 56% / 0.45), transparent 55%),
+                     linear-gradient(180deg, hsl(232 47% 8%), hsl(258 50% 12%));
+    --gradient-cta: linear-gradient(135deg, hsl(152 76% 44%), hsl(152 90% 55%));
+    --gradient-card: linear-gradient(160deg, hsl(0 0% 100%), hsl(224 30% 98%));
+    --gradient-text: linear-gradient(135deg, hsl(232 78% 56%), hsl(258 89% 66%) 50%, hsl(285 85% 62%));
+
+    /* Shadows */
+    --shadow-brand: 0 20px 60px -20px hsl(232 78% 56% / 0.45);
+    --shadow-cta: 0 12px 40px -8px hsl(152 90% 45% / 0.55);
+    --shadow-card: 0 10px 40px -15px hsl(232 60% 30% / 0.18);
+    --shadow-card-hover: 0 25px 60px -15px hsl(258 89% 66% / 0.35);
+    --shadow-glow: 0 0 80px hsl(258 89% 66% / 0.4);
+
+    /* Motion */
+    --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+    --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1, h2, h3, h4, h5 { @apply font-display tracking-tight; }
+}
+
+@layer utilities {
+  .text-gradient-brand {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .bg-gradient-brand { background: var(--gradient-brand); }
+  .bg-gradient-hero { background: var(--gradient-hero); }
+  .bg-gradient-cta { background: var(--gradient-cta); }
+  .bg-gradient-card { background: var(--gradient-card); }
+  .shadow-brand { box-shadow: var(--shadow-brand); }
+  .shadow-cta { box-shadow: var(--shadow-cta); }
+  .shadow-card-soft { box-shadow: var(--shadow-card); }
+  .shadow-card-hover { box-shadow: var(--shadow-card-hover); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+
+  .glass {
+    background: hsl(0 0% 100% / 0.06);
+    backdrop-filter: blur(14px);
+    border: 1px solid hsl(0 0% 100% / 0.12);
+  }
+  .glass-light {
+    background: hsl(0 0% 100% / 0.7);
+    backdrop-filter: blur(14px);
+    border: 1px solid hsl(224 20% 90% / 0.6);
+  }
+  .grid-pattern {
+    background-image:
+      linear-gradient(hsl(0 0% 100% / 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(0 0% 100% / 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}
